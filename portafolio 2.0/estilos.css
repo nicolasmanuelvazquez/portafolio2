@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body{
+    background-color: rgb(20, 20, 20);
+}
+
+/* barra lateral */
+
+
+
+/* cuerpo principal */
+
+
+/*inicio*/
+.inicio{
+    display: flex;
+    background-image: url(img/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    border-bottom: 5px solid #fff;
+}
+
+.inicio .contenido-inicio{ 
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 3px solid #fff;
+    border-radius: 50px;
+    width: 30%;
+    max-height: 90vh;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-foto{
+    width: 40%;
+    padding: 5%;
+    border-bottom: 3px solid #fff;
+}
+
+.contenedor-foto img{
+    width: 100%;
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+
+.contenedor-boton{
+    width: 50%;
+    padding: 5%;
+    text-align: center;
+}
+
+.contenedor-boton button{
+    width: 70%;
+    height: 5vh;
+    background: none;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.contenedor-boton button:hover{
+    color: #000;
+    background-color: #fff;
+    transition: .5s;
+}
+
+.contenedor-titulo{
+    width: 80%;
+    text-align: center;
+    color: #fff;
+}
+
+.contenedor-texto{
+    width: 80%;
+    margin: 5%;
+    color: #fff;
+}
+
+/*skills*/
+
+.titulo-apartado{
+    color: aliceblue;
+    font-size: 30px;
+    margin: 50px;
+}
+
+.skills .contenido-skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+    margin: 50px;
+}
+
+.skills .contenido-skills .elemento-skills{
+    width: 200px;
+    margin: 30px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 20px;    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.elemento-skills .contenedor-logo{
+    width: 30%;
+    text-align: center;
+    font-size: 50px;
+    background-color: #fff;
+    padding: 10%;
+    border-radius: 50%;
+    margin: 10%;
+}
+
+.elemento-skills h1{
+    color: #fff;
+    margin: 2px;
+}
+
+.elemento-skills h3{
+    color: #fff;
+    margin: 2px;
+}
+
+.elemento-skills p{
+    color: #fff;
+    margin: 2px;
+    margin-top: 5%;
+}
+
+/* portafolio */
+
+.portafolio .contenedor-portafolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px;
+}
+
+.portafolio .contenedor-portafolio .proyecto {
+    max-width: 400px;
+    border: 1px solid #000;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.portafolio .contenedor-portafolio .proyecto img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: .5s;
+}
+
+.portafolio .contenedor-portafolio .proyecto:hover img {
+    filter: grayscale(0);
+}
+
+.portafolio .contenedor-portafolio .proyecto .info {
+    position: absolute;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: .5s;
+}
+
+.portafolio .contenedor-portafolio .proyecto .info a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border: #fff solid 1px;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px 10px; 
+}
+
+.portafolio .contenedor-portafolio .proyecto:hover .info {
+    opacity: 1;
+    bottom: 0;
+}
+
+.portafolio .contenedor-portafolio .proyecto .info a:hover{
+    color: #000;
+    background-color: #fff;
+    transition: .5s;
+}
+
+/* foother*/
+
+.foother{
+
+}
+
+.foother .contenedor-contacto{
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+}
+
+.foother .contenedor-contacto .elemento-contacto{
+    width: 80px;
+    height: 80px;
+    margin-right: 50px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #000;
+}
+
+.foother .contenedor-contacto .elemento-contacto:hover{
+    background: none;
+    color: #fff;
+    transition: .5s;
+}
